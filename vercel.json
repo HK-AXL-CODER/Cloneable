@@ -5,11 +5,6 @@
       "use": "@vercel/node"
     }
   ],
-  "functions": {
-    "api/*.js": {
-      "runtime": "@vercel/node"
-    }
-  },
   "env": {
     "NODE_ENV": "production"
   },
