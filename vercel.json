@@ -1,0 +1,21 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "install": {
+    "include": [
+      "better-sqlite3"
+    ]
+  }
+}
