@@ -3,13 +3,13 @@
     {
       "src": "package.json",
       "use": "@vercel/node",
-       "config": {
+      "config": {
         "installCommand": "npm install --build-from-source",
         "buildCommand": "npm run build"
       }
     }
   ],
-   "routes": [
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/index.html"
